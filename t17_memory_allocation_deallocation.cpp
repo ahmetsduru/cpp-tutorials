@@ -24,6 +24,26 @@ int main()
 
     cout << p << " " << q << endl;
 
+    int *r = new int[4];
+    r[0] = 5;
+    r[1] = 8;
+    r[2] = 96;
+    r[3] = 45;
+
+    for (int i = 0; i < 4; i++)
+    {
+        cout << *(r + i) << endl;
+        cout << (r + i) << endl;
+    }
+
+    delete[] r;
+    r = nullptr;
+
+        for (int i = 0; i < 4; i++)
+    {
+        cout << (r + i) << endl;
+    }
+
     return 0;
 
 }
